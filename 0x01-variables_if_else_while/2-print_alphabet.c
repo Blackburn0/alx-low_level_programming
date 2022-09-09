@@ -2,7 +2,7 @@
 
 /**
  *
- *  * main - program execution begins here
+ * main - program execution begins here
  *
  * Description: This program prints out all the letters of the alphabet
  * and then prints out newline character.
