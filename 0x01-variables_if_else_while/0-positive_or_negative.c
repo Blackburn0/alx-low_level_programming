@@ -6,8 +6,9 @@
 
 /**
  * main - entry point into the program
- * 
+ *
  * Description: The function below generates a random number "n"
+ * Return: 0 (Successful)
  */
 int main(void)
 {
