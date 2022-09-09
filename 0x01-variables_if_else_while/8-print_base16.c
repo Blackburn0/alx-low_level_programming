@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - program execution begins here
+ *main - program execution begin here
  *
- *Description: 
+ *Description:
  *Return: 0 (Successful)
  */
 
