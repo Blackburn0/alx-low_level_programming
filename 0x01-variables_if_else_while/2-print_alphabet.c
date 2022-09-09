@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - program execution begins here
  *
  * Description: This program prints out all the letters of the alphabet
