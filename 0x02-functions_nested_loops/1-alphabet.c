@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_alphabet - prints alphabet to terminal
+ * print_alphabet - prints alphabet to terminal
  *
  * Description: Prints the letters of the english alphabet
  * in lowercase.
@@ -17,6 +17,5 @@ void print_alphabet(void)
 		_putchar(letter);
 		letter++;
 	}
-
 	_putchar('\n');
 }
