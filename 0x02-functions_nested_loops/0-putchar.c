@@ -1,27 +1,22 @@
-#include <stdio.h>
-#include "main.h"
-
+#include "holberton.h"
 
 /**
- * main - Program entry point
  *
- * Description: This is a program that will print the
- * the message "_putchar" to the screen followed by a
- * newline.
- * Return: Always 0 (If Successful)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-		_putchar('_');
-		_putchar('p');
-		_putchar('u');
-		_putchar('t');
-		_putchar('c');
-		_putchar('h');
-		_putchar('a');
-		_putchar('r');
-		_putchar('\n');
+	char *sh = "_putchar";
 
-		return (0);
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+	
+	return (0);
 }
