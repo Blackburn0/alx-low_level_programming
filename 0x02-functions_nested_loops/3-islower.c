@@ -2,6 +2,7 @@
 
 /**
  * _islower - Is the character lowercase?
+ * @c: The character code to evaluate
  *
  * Description: This program receives a character from
  * the user and then determines if the character is a
