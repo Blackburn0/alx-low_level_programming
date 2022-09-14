@@ -18,12 +18,12 @@ void jack_bauer(void)
 		while (num2 <= 9)
 		{
 			int num3 = 0;
-																			while (num3 < 6)
+			while (num3 < 6)
 			{
 				int num4 = 0;
-																				while (num4 <= 9)
+				while (num4 <= 9)
 				{
-																					_putchar('0' + num1);
+					_putchar('0' + num1);
 					_putchar('0' + num2);
 					_putchar(':');
 					_putchar('0' + num3);
@@ -31,15 +31,12 @@ void jack_bauer(void)
 					_putchar('\n');
 																					num4++;
 				}
-																				num3++;
-																			}
-																			if (num1 == 2 && num2 == 3)
+				num3++;
+			}
+			if (num1 == 2 && num2 == 3)
 			{
 				break;
-			}
-																			num2++;
-																		}
+			}																num2++;															}
 		num1++;
 	}
-
 }
