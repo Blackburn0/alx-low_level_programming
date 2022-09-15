@@ -1,7 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_diagonal - a function that draws a diagonal line on the terminal.
+ * print_diagonal - a function that draws a diagonal line.
  * @n: An input integer
  * Return: Always 0
  */
