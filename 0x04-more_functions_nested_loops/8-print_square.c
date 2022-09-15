@@ -1,31 +1,24 @@
 #include "main.h"
 
 /**
- * print_square - prints a square shape to the terminal
- * @size: an integer which represents the size of the square
- *
- * Description: This function creates a square by repeatedly
- * writing '#' to the screen for the number
- * Return: Void
+ * print_square - function that prints a square,
+ * followed by a new line.
+ * @size: Ainteger
+ * Return: Always 0
  */
-
 void print_square(int size)
 {
-	if (size <= 0)
+	int i, j;
+
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		int i;
-		int j;
-	
 		for (i = 0; i < size; i++)
 		{
 			for (j = 0; j < size; j++)
-			{
-				_putchar('#');																														}
+				_putchar('#');
 			_putchar('\n');
 		}
 	}
+	else
+		_putchar('\n');
 }
