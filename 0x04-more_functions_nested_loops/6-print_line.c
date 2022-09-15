@@ -1,7 +1,7 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * print_line - a function that draws a straight line in the terminal.
+ * print_line - a function that draws a straight line.
  * followed by a new line.
  * @n: An input integer
  * Return: Always 0
