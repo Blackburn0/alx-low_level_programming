@@ -6,7 +6,7 @@
  * @src: code
  * @n: code
  *
- * Return:
+ * Return: code
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
