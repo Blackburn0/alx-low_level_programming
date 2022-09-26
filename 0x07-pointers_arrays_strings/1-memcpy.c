@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _memcpy -
- * @dest:
- * @src:
- * @n:
+ * _memcpy - code
+ * @dest: code
+ * @src: code
+ * @n: code
+ *
  * Return:
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
