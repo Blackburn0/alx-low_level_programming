@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strstr - code
@@ -10,21 +9,24 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *startn = needle, *starth = haystack;
+	char *str1, *str2;
 
-	while (*haystack)
+	while (*haystack != '\0')
 	{
-		starth = haystack;
-		needle = startn;
-		while (*haystack == *needle)
+		str1 = haystack;
+		str2 = needle;
+
+		while (*haystack != '\0' && *str2 != '\0' && *haystack == *str2)
 		{
 			haystack++;
-			needle++;
+			str2++;
 		}
 
-		if (*needle == '\0')
-			return (haystack);
-		haystack = starth + 1;
+		if (*str2 == '\0')
+		{
+			return (str1);
+		}
+		haystack = str1 + 1;
 	}
-	return (NULL);
+	return (0);
 }
