@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _memset -
- * @s:
- * @b:
- * @n:
+ * _memset - code
+ * @s: code
+ * @b: code
+ * @n: code
  *
  * Return: @s
  */
