@@ -5,16 +5,19 @@
  * @s:
  * @b:
  * @n:
- * Return:
+ *
+ * Return: @s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *start = s;
+	unsigned int i;
 
-	while (n--)
+	i = 0;
+	while (i < n)
 	{
-		*s = b;
-		s++;
+		*(s + i) = b;
+		i++;
 	}
-	return (start);
+
+	return (s);
 }
