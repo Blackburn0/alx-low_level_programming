@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strstr -
- * @haystack:
- * @needle:
- * Return:
+ * _strstr - code
+ * @haystack: code
+ * @needle: code
+ *
+ * Return: code
  */
 char *_strstr(char *haystack, char *needle)
 {

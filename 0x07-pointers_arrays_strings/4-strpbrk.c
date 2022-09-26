@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strpbrk -
- * @s:
- * @accept:
- * Return:
+ * _strpbrk - code
+ * @s: code
+ * @accept: code
+ *
+ * Return: code
  */
 char *_strpbrk(char *s, char *accept)
 {

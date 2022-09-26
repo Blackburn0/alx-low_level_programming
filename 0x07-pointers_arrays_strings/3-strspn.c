@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * _strspn -
- * @s:
- * @accept:
- * Return:
+ * _strspn - code
+ * @s: code
+ * @accept: code
+ *
+ * Return: code
  */
 unsigned int _strspn(char *s, char *accept)
 {

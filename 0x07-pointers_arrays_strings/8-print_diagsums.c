@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_diagsums -
- * @a:
- * @size:
+ * print_diagsums - code
+ * @a: code
+ * @size: code
  */
 void print_diagsums(int *a, int size)
 {

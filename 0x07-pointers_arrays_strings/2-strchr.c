@@ -2,10 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strchr -
- * @s:
- * @c:
- * Return:
+ * _strchr - code
+ * @s: code
+ * @c: code
+ * Return: code
  */
 char *_strchr(char *s, char c)
 {
