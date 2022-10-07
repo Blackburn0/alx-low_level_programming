@@ -2,17 +2,20 @@
 #include <stdlib.h>
 
 /**
+ * malloc_checked - code
  * @b: code
- * Return: code
+ *
+ * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
-	void *s;
+	void *ptr;
 
-	s = malloc(b);
-
-	if (s == NULL)
+	ptr = malloc(b);
+	if (ptr == NULL)
+	{
 		exit(98);
+	}
 
-	return (s);
+	return (ptr);
 }
