@@ -1,47 +1,72 @@
 #include "dog.h"
 #include <stdlib.h>
 
+char *_strdup(char *str);
+
 /**
  * new_dog - code
  * @name: code
  * @age: code
  * @owner: code
+ *
  * Return: code
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog;
-	char *cpyname, *cpyowner;
-	int len_name = 0, len_owner = 0, i;
+	dog_t *d_ptr;
+	char *temp_name, *temp_owner;
 
-	if (name == NULL || owner == NULL)
+	d_ptr = malloc(sizeof(dog_t));
+	if (d_ptr == NULL)
 		return (NULL);
 
-	while (name[len_name])
-		len_name++;
-	while (owner[len_owner])
-		len_owner++;
+	temp_name = _strdup(name);
+	if (temp_name == NULL)
+	{
+		free(d_ptr);
+		return (NULL);
+	}
+	d_ptr->name = temp_name;
 
-	new_dog = malloc(sizeof(dog_t));
-	if (new_dog == NULL)
+	d_ptr->age = age;
+
+	temp_owner = _strdup(owner);
+	if (temp_owner == NULL)
+	{
+		free(d_ptr->name);
+		free(d_ptr);
+		return (NULL);
+	}
+	d_ptr->owner = temp_owner;
+
+	return (d_ptr);
+}
+
+/**
+ * _strdup - code
+ * @str: code
+ *
+ * Return: @str
+ */
+char *_strdup(char *str)
+{
+	char *ptr;
+	int size, i;
+
+	if (str == NULL)
 		return (NULL);
 
-	cpyname = malloc(len_name + 1);
-	if (cpyname == NULL)
-		return (NULL);
-	for (i = 0; name[i]; i++)
-		cpyname[i] = name[i];
-	cpyname[i] = '\0';
+	size = 0;
+	for (i = 0; str[i] != '\0'; i++)
+		size++;
 
-	cpyowner = malloc(len_owner + 1);
-	if (cpyowner == NULL)
+	ptr = malloc(sizeof(char) * (size + 1));
+	if (ptr == NULL)
 		return (NULL);
-	for (i = 0; owner[i]; i++)
-		cpyowner[i] = owner[i];
-	cpyowner[i] = '\0';
 
-	new_dog->name = cpyname;
-	new_dog->age = age;
-	new_dog->owner = cpyowner;
-	return (new_dog);
+	for (i = 0; str[i] != '\0'; i++)
+		ptr[i] = str[i];
+
+	ptr[size] = '\0';
+	return (ptr);
 }
